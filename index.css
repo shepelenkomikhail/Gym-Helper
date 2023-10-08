@@ -1,0 +1,230 @@
+header
+{
+    text-align: center;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(254, 234, 209); 
+    margin-bottom: 30px;
+    margin: 0;
+    text-align: center; 
+    
+}
+
+.visually-hidden-focusable {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.visually-hidden-focusable:active,
+.visually-hidden-focusable:focus {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+}
+
+#top {
+    background-color: rgb(22, 231, 213);
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    background-image: url(MainImages/dumbel.png);
+    background-repeat: no-repeat;
+    background-position: 30px -7px;
+    background-size: 150px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {color: red;}
+
+a:visited {color: rgb(79, 65, 65);}
+
+.nav-link {margin: 0 30px;}
+
+#wtg, #wwltt {
+    left: 50%;
+    font-size: 40px;
+}
+
+#excercises .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  
+  #excercises .col-4 {
+    flex-basis: calc(33.33% - 30px);
+    margin: 0 15px 30px;
+  }
+  
+  #excercises figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  #excercises figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  table {
+     margin: 0 auto;
+     margin-top: 20px;
+     width: 50%;
+     height: 300px;
+  }
+
+  #cc{
+    font-size: 35px;
+  }
+
+  #ifu {
+margin-top: 40px;
+  }
+
+  #feedback form input[type="text"],
+  #feedback form input[type="email"],
+  #feedback form textarea {
+      height: 50px;
+      width: 30%; 
+      display: block; 
+      margin-bottom: 20px; 
+  }
+
+  #feedback form #message, #email, #name {
+    margin: 0 auto;
+}
+
+#feedback form #name{
+    height: 25px;
+    width: 300px;
+}
+ 
+#feedback form #email{
+    height: 25px;
+    width: 300px;
+}
+
+#feedback form #message{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+#radio, #robotCheck, #submitButton {
+    margin: 30px;
+}
+
+#submitButton {
+    height: 50px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+#submitButton{
+    cursor: pointer;
+  }
+
+ nav #home { color: darkblue;}
+ 
+ nav{font-weight: bold;}
+
+ footer {
+    background-color: rgb(22, 231, 213);
+    padding: 7px;
+    width: 100%;
+ }
+
+ img {border-radius: 3%;}
+
+ #motivation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #caption {
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+#wdihtp {font-size: 30px;}
+
+#motivvid {
+    width: 750px;
+    height: 500px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+
+@media only screen and (max-width: 415px) {
+
+    #motivation {
+    flex-direction: column;
+    }
+    
+    #feedback form #message {
+    height: 200px;
+    width: 90%;
+    margin: 30px 5%;
+    }
+    
+    #motivvid {
+    width: 100%;
+    height: 200px;
+    }
+
+    #top {
+      background-repeat: no-repeat;
+      background-position: -5px 35px;
+      background-size: 100px;
+    }
+    }
+
+    @media only screen and (min-width: 415px) and (max-width: 900px) {
+
+        #feedback form #message {
+          width: 80%;
+          margin: 30px auto;
+        }
+
+        #motivation {
+            flex-direction: column;
+        }
+            
+        #excercises{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+
+          
+    #top {
+      background-repeat: no-repeat;
+      background-position: -5px 0px;
+      background-size: 110px;
+    }
+      }
+        
+    
